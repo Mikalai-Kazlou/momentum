@@ -87,7 +87,7 @@ function setBackground() {
   const backgroundNumber = currentBackgroundNumber.toString().padStart(2, '0');
 
   const image = new Image();
-  image.src = `../assets/images/${timeOfDay}/${backgroundNumber}.jpg`;
+  image.src = `./assets/images/${timeOfDay}/${backgroundNumber}.jpg`;
   image.onload = () => {
     eBody.style.backgroundImage = `url('${image.src}')`;
   };
